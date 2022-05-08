@@ -16,4 +16,7 @@ export default {
   components: { Navbar, Footer },
 }
 </script>
-<script>
+
+<style>
+@import 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css';
+</style>

@@ -1,5 +1,8 @@
 <template>
-  <div>asdas</div>
+  <div>
+    <p v-if="$nuxt.isOnline">Onlen</p>
+    <p v-if="$nuxt.isOffline">Oplen</p>
+  </div>
 </template>
 
 <script>

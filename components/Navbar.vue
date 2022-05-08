@@ -25,7 +25,7 @@
           lg:static lg:block lg:justify-start
         "
       >
-        <a
+        <NuxtLink
           class="
             text-sm
             font-bold
@@ -34,13 +34,12 @@
             mr-4
             py-2
             whitespace-nowrap
-            uppercase
             text-gray-700
           "
-          href="#pablo"
+          to="/"
         >
-          Logoo
-        </a>
+          Logoos
+        </NuxtLink>
         <button
           class="
             text-gray-700
@@ -69,7 +68,7 @@
       >
         <ul class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
-            <a
+            <NuxtLink
               class="
                 px-3
                 py-2
@@ -82,7 +81,7 @@
                 text-gray-700
                 hover:opacity-75
               "
-              href="#pablo"
+              to="/"
             >
               <i
                 class="
@@ -93,11 +92,11 @@
                   text-gray-700
                   opacity-75
                 "
-              /><span class="ml-2">Share</span>
-            </a>
+              /><span class="ml-2">Shares <i class="fas fa-bars"></i></span>
+            </NuxtLink>
           </li>
           <li class="nav-item">
-            <a
+            <NuxtLink
               class="
                 px-3
                 py-2
@@ -110,7 +109,7 @@
                 text-gray-700
                 hover:opacity-75
               "
-              href="#pablo"
+              to="/"
             >
               <i
                 class="
@@ -122,10 +121,10 @@
                   opacity-75
                 "
               /><span class="ml-2">Tweet</span>
-            </a>
+            </NuxtLink>
           </li>
           <li class="nav-item">
-            <a
+            <NuxtLink
               class="
                 px-3
                 py-2
@@ -138,7 +137,7 @@
                 text-gray-700
                 hover:opacity-75
               "
-              href="#pablo"
+              to="/"
             >
               <i
                 class="
@@ -150,7 +149,7 @@
                   opacity-75
                 "
               /><span class="ml-2">Pin</span>
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
