@@ -15,13 +15,13 @@
         container
         mx-auto
         flex flex-wrap
-        lg:flex- lg:items-center
+        md:flex md:items-center
         justify-between
         w-full
       "
     >
       <div
-        class="w-full relative flex px-3 justify-between lg:w-3/12 items-center"
+        class="w-full relative flex px-3 justify-between md:w-3/12 items-center"
       >
         <NuxtLink to="/">
           <img src="img/logo.png" alt="" class="h-4 lg:h-5" />
@@ -38,7 +38,7 @@
             rounded
             bg-transparent
             block
-            lg:hidden
+            md:hidden
             outline-none
             focus:outline-none
           "
@@ -50,9 +50,9 @@
       </div>
       <div
         v-bind:class="{ hidden: !showMenu, flex: showMenu }"
-        class="lg:flex lg:flex-grow items-center lg:w-5"
+        class="md:flex md:flex-grow items-center lg:w-5"
       >
-        <ul class="flex flex-col lg:flex-row list-none ml-auto lg:items-center">
+        <ul class="flex flex-col md:flex-row list-none ml-auto md:items-center">
           <li class="nav-item">
             <NuxtLink
               class="
