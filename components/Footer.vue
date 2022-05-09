@@ -134,8 +134,8 @@
           </div>
         </div>
       </div>
-      <div class="bg-blue-500 text-center py-3">
-        <p class="text-md font-bold text-white">© 2022 Comany Name</p>
+      <div class="bg-blue-600 text-center py-3">
+        <p class="text-sm font-bold text-white">© 2022 LostCode</p>
       </div>
     </footer>
   </div>

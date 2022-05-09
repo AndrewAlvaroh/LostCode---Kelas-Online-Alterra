@@ -5,40 +5,26 @@
       flex flex-wrap
       items-center
       justify-between
-      px-2
+      xl:px-8
       py-3
       bg-primary
-      mb-3
     "
   >
     <div
-      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      class="
+        container
+        mx-auto
+        flex flex-wrap
+        lg:flex- lg:items-center
+        justify-between
+        w-full
+      "
     >
       <div
-        class="
-          w-full
-          relative
-          flex
-          justify-between
-          lg:w-auto
-          px-4
-          lg:static lg:block lg:justify-start
-        "
+        class="w-full relative flex px-3 justify-between lg:w-3/12 items-center"
       >
-        <NuxtLink
-          class="
-            text-sm
-            font-bold
-            leading-relaxed
-            inline-block
-            mr-4
-            py-2
-            whitespace-nowrap
-            text-gray-700
-          "
-          to="/"
-        >
-          Logoos
+        <NuxtLink to="/">
+          <img src="img/logo.png" alt="" class="h-4 lg:h-5" />
         </NuxtLink>
         <button
           class="
@@ -64,9 +50,9 @@
       </div>
       <div
         v-bind:class="{ hidden: !showMenu, flex: showMenu }"
-        class="lg:flex lg:flex-grow items-center"
+        class="lg:flex lg:flex-grow items-center lg:w-5"
       >
-        <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <ul class="flex flex-col lg:flex-row list-none ml-auto lg:items-center">
           <li class="nav-item">
             <NuxtLink
               class="
@@ -75,24 +61,16 @@
                 flex
                 items-center
                 text-xs
-                uppercase
-                font-bold
+                font-medium
+                md:text-sm
+                lg:text-base
                 leading-snug
                 text-gray-700
                 hover:opacity-75
               "
-              to="/"
+              to="/kelas"
             >
-              <i
-                class="
-                  fab
-                  fa-facebook-square
-                  text-lg
-                  leading-lg
-                  text-gray-700
-                  opacity-75
-                "
-              /><span class="ml-2">Shares <i class="fas fa-bars"></i></span>
+              Kelas Online
             </NuxtLink>
           </li>
           <li class="nav-item">
@@ -103,24 +81,16 @@
                 flex
                 items-center
                 text-xs
-                uppercase
-                font-bold
+                font-medium
+                md:text-sm
+                lg:text-base
                 leading-snug
                 text-gray-700
                 hover:opacity-75
               "
-              to="/"
+              to="/karya-kita"
             >
-              <i
-                class="
-                  fab
-                  fa-twitter
-                  text-lg
-                  leading-lg
-                  text-gray-60700
-                  opacity-75
-                "
-              /><span class="ml-2">Tweet</span>
+              Karya Kita
             </NuxtLink>
           </li>
           <li class="nav-item">
@@ -131,24 +101,35 @@
                 flex
                 items-center
                 text-xs
-                uppercase
-                font-bold
+                font-medium
+                md:text-sm
+                lg:text-base
                 leading-snug
                 text-gray-700
                 hover:opacity-75
               "
+              to="/artikel"
+            >
+              Artikel
+            </NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink
+              class="
+                px-3
+                py-2
+                flex
+                items-center
+                text-xs
+                font-medium
+                md:text-sm
+                lg:text-base
+                leading-snug
+                text-gray-700
+              "
               to="/"
             >
-              <i
-                class="
-                  fab
-                  fa-pinterest
-                  text-lg
-                  leading-lg
-                  text-gray-700
-                  opacity-75
-                "
-              /><span class="ml-2">Pin</span>
+              <ButtonPrimary ButtonPrimary="Login" />
             </NuxtLink>
           </li>
         </ul>
