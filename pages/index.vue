@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-primary">
-    <section class="px-6">
+  <div>
+    <section class="px-6 bg-primary">
       <div class="flex justify-center md:hidden">
         <img src="img/content1.png" alt="content1" class="w-11/12" />
       </div>
@@ -51,12 +51,103 @@
       </div>
     </section>
 
-    <section>
-      <h5>
+    <section class="py-10">
+      <div class="text-center">
         <h5 class="font-semibold text-sm lg:text-base" style="color: #1a8ac9">
-          Together we can do!
+          Masih ragu untuk memulai?
         </h5>
-      </h5>
+        <br />
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">
+          Apa Aja keuntungan <br />
+          mengikuti bootcamp kami
+        </h1>
+      </div>
+      <div style="background-color: #fdfdfd" class="mt-2 py-5">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 w-10/12 mx-auto">
+          <div
+            class="
+              card
+              bg-transparent
+              hover:bg-white
+              rounded-md
+              p-3
+              lg:p-4
+              shadow-none
+              hover:shadow-md
+              duration-200
+            "
+          >
+            <img src="img/component3.png" class="h-10 md:h-14" alt="" />
+            <h5 class="font-semibold mt-1 md:text-md xl:text-lg">Gratis</h5>
+            <p class="text-xs md:text-sm xl:text-md">
+              Peserta bisa mendaftar gratis dan memilih lebih dari 1 program
+            </p>
+          </div>
+
+          <div
+            class="
+              card
+              bg-transparent
+              hover:bg-white
+              rounded-md
+              p-3
+              lg:p-4
+              shadow-none
+              hover:shadow-md
+              duration-200
+            "
+          >
+            <img src="img/component4.png" class="h-10 md:h-14" alt="" />
+            <h5 class="font-semibold mt-1 md:text-md xl:text-lg">
+              Waktu Flexibel
+            </h5>
+            <p class="text-xs md:text-sm xl:text-md">
+              belajar kapanpun dan dimanapun
+            </p>
+          </div>
+          <div
+            class="
+              card
+              bg-transparent
+              hover:bg-white
+              rounded-md
+              p-3
+              lg:p-4
+              shadow-none
+              hover:shadow-md
+              duration-200
+            "
+          >
+            <img src="img/component5.png" class="h-10 md:h-14" alt="" />
+            <h5 class="font-semibold mt-1 md:text-md xl:text-lg">Sertifikat</h5>
+            <p class="text-xs md:text-sm xl:text-md">
+              Menunjang portofolio tentang penguasaan Skill di Bidang Teknologi.
+            </p>
+          </div>
+          <div
+            class="
+              card
+              bg-transparent
+              hover:bg-white
+              rounded-md
+              p-3
+              lg:p-4
+              shadow-none
+              hover:shadow-md
+              duration-200
+            "
+          >
+            <img src="img/component6.png" class="h-10 md:h-14" alt="" />
+            <h5 class="font-semibold mt-1 md:text-md xl:text-lg">
+              Build Portofolio
+            </h5>
+            <p class="text-xs md:text-sm xl:text-md">
+              Dapat menunjukan bukti dari skill yang dipelajarinya berupa
+              project real
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>

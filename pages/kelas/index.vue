@@ -1,5 +1,5 @@
 <template>
-  <div>kelas</div>
+  <div style="background-color: #f8f8f8"></div>
 </template>
 
 <script>
