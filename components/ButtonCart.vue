@@ -3,25 +3,21 @@
     <button
       class="
         py-2
-        lg:py-3
-        px-5
+        px-3
         rounded-xl
-        lg:text-base
         text-white
         font-semibold
         hover:opacity-75
+        bg-blue-500
       "
-      style="background-color: #00bcf1"
     >
-      {{ ButtonPrimary }}
+      <i class="fas fa-cart-plus"></i>
     </button>
   </div>
 </template>
 
 <script>
-export default {
-  props: ['ButtonPrimary'],
-}
+export default {}
 </script>
 
 <style>

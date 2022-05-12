@@ -24,7 +24,7 @@
         class="w-full relative flex px-3 justify-between md:w-3/12 items-center"
       >
         <NuxtLink to="/">
-          <img src="img/logo.png" alt="" class="h-4 lg:h-5" />
+          <img src="img/logo.png" alt="logo" class="h-4 lg:h-5" />
         </NuxtLink>
         <button
           class="
@@ -113,25 +113,46 @@
               Artikel
             </NuxtLink>
           </li>
-          <li class="nav-item">
-            <NuxtLink
-              class="
-                px-3
-                py-2
-                flex
-                items-center
-                text-xs
-                font-medium
-                md:text-sm
-                lg:text-base
-                leading-snug
-                text-gray-700
-              "
-              to="/"
-            >
-              <ButtonPrimary ButtonPrimary="Login" />
-            </NuxtLink>
-          </li>
+          <div class="flex items-center">
+            <li class="nav-item">
+              <NuxtLink
+                class="
+                  px-3
+                  py-2
+                  flex
+                  items-center
+                  text-xs
+                  font-medium
+                  md:text-sm
+                  lg:text-base
+                  leading-snug
+                  text-gray-700
+                "
+                to="/"
+              >
+                <i class="fas fa-cart-plus text-xl"></i>
+              </NuxtLink>
+            </li>
+            <li class="nav-item">
+              <NuxtLink
+                class="
+                  px-3
+                  py-2
+                  flex
+                  items-center
+                  text-xs
+                  font-medium
+                  md:text-sm
+                  lg:text-base
+                  leading-snug
+                  text-gray-700
+                "
+                to="/login"
+              >
+                <ButtonPrimary ButtonPrimary="Login" />
+              </NuxtLink>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

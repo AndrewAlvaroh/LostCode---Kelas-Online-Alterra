@@ -1,10 +1,6 @@
 <template>
   <div>
-    <section>
-      <div>
-        <CardArtikel />
-      </div>
-    </section>
+    <nuxt />
   </div>
 </template>
 
