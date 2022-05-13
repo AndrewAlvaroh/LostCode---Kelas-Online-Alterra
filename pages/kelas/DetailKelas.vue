@@ -110,7 +110,7 @@
           ></iframe>
           <div class="w-11/12 mx-auto py-4">
             <NuxtLink
-              to="/"
+              to="/cart"
               class="
                 block
                 w-full

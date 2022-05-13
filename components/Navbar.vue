@@ -128,12 +128,12 @@
                   leading-snug
                   text-gray-700
                 "
-                to="/"
+                to="/cart"
               >
-                <i class="fas fa-cart-plus text-xl"></i>
+                <i class="fas fa-cart-plus text-xl">{{ totalQty }}</i>
               </NuxtLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <NuxtLink
                 class="
                   px-3
@@ -151,7 +151,7 @@
               >
                 <ButtonPrimary ButtonPrimary="Login" />
               </NuxtLink>
-            </li>
+            </li> -->
           </div>
         </ul>
       </div>
@@ -160,12 +160,19 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'Navbar-Layout',
   data() {
     return {
       showMenu: false,
     }
+  },
+  computed: {
+    ...mapGetters(['cart']),
+    totalQty() {
+      return this.cart.reduce((a, b) => a + b.qty, 0)
+    },
   },
   methods: {
     toggleNavbar: function () {
