@@ -24,7 +24,22 @@
 </template>
 
 <script>
-export default {}
+import products from '~/mock/products.json'
+export default {
+  data() {
+    return {
+      detailKelas: [],
+    }
+  },
+  created() {
+    const data = products.filter(
+      (item) => item.slug === this.$route.params.title
+    )
+    this.detailKelas = data[0]
+    console.log(this.detailKelas)
+  },
+  methods: {},
+}
 </script>
 
 <style>

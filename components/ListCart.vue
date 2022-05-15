@@ -29,10 +29,12 @@
                 <i class="fas fa-minus-circle text-red-500 text-2xl"></i>
               </button>
             </div>
-            <ButtonPrimary
-              class="mt-4"
-              ButtonPrimary="Gabung Kelas"
-            ></ButtonPrimary>
+            <NuxtLink :to="`/kelas/${item.slug}/asd`">
+              <ButtonPrimary
+                class="mt-4"
+                ButtonPrimary="Gabung Kelas"
+              ></ButtonPrimary>
+            </NuxtLink>
           </div>
         </div>
       </div>
