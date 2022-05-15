@@ -1,18 +1,17 @@
 <template>
   <div class="md:w-11/12 mx-auto">
     <section class="md:mt-12">
-      {{ $route.params.title }}
       <div class="md:hidden">
         <iframe
           class="youtube-size"
-          src="https://www.youtube.com/embed/YjmLFdXiCJU"
+          :src="detailKelas.video1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <div class="w-11/12 mx-auto py-4">
-          <!-- {{ products.title }} -->
+          {{ detailKelas.title }}
           <NuxtLink
             to="/"
             class="
@@ -34,6 +33,7 @@
         <div class="w-11/12 md:w-5/12 mx-auto">
           <div class="font-bold text-2xl lg:text-3xl xl:text-4xl">
             <h1 class="relative inline">
+              {{ detailKelas.title }}
               <img src="/img/component2.png" class="w-11/12" alt="component1" />
             </h1>
           </div>
@@ -103,7 +103,7 @@
         <div class="hidden md:block md:w-6/12">
           <iframe
             class="youtube-size"
-            src="https://www.youtube.com/embed/YjmLFdXiCJU"
+            :src="detailKelas.video1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -132,7 +132,9 @@
     <section class="w-11/12 mt-7 mx-auto">
       <div class="md:w-5/12">
         <h1 class="text-lg md:text-xl lg:text-2xl font-semibold">Deskripsi</h1>
-        <h4 class="text-fsm"></h4>
+        <h4 class="text-fsm">
+          {{ detailKelas.desc }}
+        </h4>
       </div>
     </section>
   </div>
@@ -147,13 +149,13 @@ export default {
     }
   },
   created() {
-    filterBySlug($route.params.title)
+    const data = products.filter(
+      (item) => item.slug === this.$route.params.title
+    )
+    this.detailKelas = data[0]
+    console.log(this.detailKelas)
   },
-  methods: {
-    filterBySlug(slug) {
-      return products.filter((data) => data.slug === slug)
-    },
-  },
+  methods: {},
 }
 </script>
 
