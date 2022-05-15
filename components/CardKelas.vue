@@ -40,7 +40,7 @@
             Rp. {{ item.price }}
           </p>
           <div class="flex w-full items-center mt-3 md:mt-4 lg:mt-5 xl:mt-6">
-            <NuxtLink to="/kelas/detailkelas" class="w-10/12 xl:px-2">
+            <NuxtLink :to="`/kelas/${item.slug}`" class="w-10/12 xl:px-2">
               <ButtonPrimary ButtonPrimary="Lihat Kelas" />
             </NuxtLink>
 
@@ -66,6 +66,7 @@ export default {
   },
   mounted() {
     this.getProducts()
+    console.log(this.$route)
   },
 }
 </script>
