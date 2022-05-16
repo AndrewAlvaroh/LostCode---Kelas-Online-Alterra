@@ -129,12 +129,15 @@
       </div>
     </section>
 
-    <section class="w-11/12 mt-7 mx-auto">
+    <section class="w-11/12 mt-7 mx-auto flex justify-between">
       <div class="md:w-5/12">
         <h1 class="text-lg md:text-xl lg:text-2xl font-semibold">Deskripsi</h1>
         <h4 class="text-fsm">
           {{ detailKelas.desc }}
         </h4>
+      </div>
+      <div class="md:w-3/12 bg-blue-100">
+        <img :src="detailKelas.imgProject" :alt="detailKelas.title" />
       </div>
     </section>
   </div>

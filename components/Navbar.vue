@@ -24,7 +24,7 @@
         class="w-full relative flex px-3 justify-between md:w-3/12 items-center"
       >
         <NuxtLink to="/">
-          <img src="img/logo.png" alt="logo" class="h-4 lg:h-5" />
+          <img src="/img/logo.png" alt="logo" class="h-4 lg:h-5" />
         </NuxtLink>
         <button
           class="

@@ -1,6 +1,13 @@
 <template>
   <div>
-    <div class="w-10/12 mx-auto border-2 border-black">
+    <div class="w-10/12 mx-auto border-2 border-black py-4 my-10">
+      <div class="text-center font-bold text-3xl">Checkout disini</div>
+      <div v-if="!cart.length" class="text-center mt-10">
+        <img src="/img/emptycart.svg" alt="" class="w-3/12 mx-auto" />
+        <h1 class="text-2xl font-semibold" style="color: #00b0ff">
+          Cart Masih Kosong nih :9
+        </h1>
+      </div>
       <div v-for="item in cart" :key="item.id">
         <div class="flex gap-5 w-8/12 mx-auto py-8">
           <div class="w-3/12">
