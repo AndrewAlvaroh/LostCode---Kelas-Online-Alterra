@@ -8,8 +8,16 @@
         "slug": "vuejs",
         "video1": "https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1",
         "imgProject": "https://blog.uxfol.io/wp-content/uploads/2021/04/max-berger-ux-portfolio-example.png",
-        "materi1": "materi 1 - vuejs",
-        "materi2": "materi 2 - vuejs"
+        "materi": [
+            {
+                "name": "materi 1 - vue Js",
+                "video": ""
+            },
+            {
+                "name": "materi 2 - vue Js",
+                "video": ""
+            }
+        ]
     },
     {
         "id": 2,

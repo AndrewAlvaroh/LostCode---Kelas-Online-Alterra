@@ -17,11 +17,12 @@
           <h1
             class="relative inline font-bold text-2xl lg:text-3xl xl:text-4xl"
           >
-            Video – Setting up and Push
+            <!-- <pre>{{ detailKelas }}</pre> -->
+            {{ detailKelas.materi[0].name }}
           </h1>
           <ul class="list-disc">
             <li class="text-gray-700 font-semibold">
-              Version Control and Branch Management (Git)
+              <!-- {{ detailKelas.materi.name }} -->
             </li>
           </ul>
         </div>
@@ -44,9 +45,9 @@
     >
       <div class="w-11/12 mx-auto">
         <h1 class="text-2xl md:text-xl xl:text-2xl font-semibold">
-          Materi Kelas
+          {{ detailMateri.materi }}
         </h1>
-        <ul>
+        <ul v-for="item in detailKelas.materi" :key="item.id">
           <li
             class="
               bg-materi
@@ -67,51 +68,9 @@
             "
           >
             <i class="fas fa-play-circle"></i
-            ><NuxtLink to="/">materi1</NuxtLink>
-          </li>
-          <li
-            class="
-              bg-materi
-              flex
-              items-center
-              text-lg
-              md:text-base
-              lg:text-lg
-              xl:text-xl
-              gap-4
-              px-6
-              py-3
-              rounded-3xl
-              font-medium
-              my-2
-              md:my-3
-              lg:my-4
-            "
-          >
-            <i class="fas fa-play-circle"></i
-            ><NuxtLink to="/">materi1</NuxtLink>
-          </li>
-          <li
-            class="
-              bg-materi
-              flex
-              items-center
-              text-lg
-              md:text-base
-              lg:text-lg
-              xl:text-xl
-              gap-4
-              px-6
-              py-3
-              rounded-3xl
-              font-medium
-              my-2
-              md:my-3
-              lg:my-4
-            "
-          >
-            <i class="fas fa-play-circle"></i
-            ><NuxtLink to="/">materi1</NuxtLink>
+            ><NuxtLink :to="`/kelas/${detailKelas.slug}/${item.name}`">{{
+              item.name
+            }}</NuxtLink>
           </li>
         </ul>
       </div>
@@ -126,14 +85,21 @@ export default {
   data() {
     return {
       detailKelas: [],
+      detailMateri: [],
     }
   },
   created() {
     const data = products.filter(
-      (item) => item.slug === this.$route.params.title.materi1
+      (item) => item.slug === this.$route.params.title
     )
+    // const detailMateri = data.materi.find(
+    //   (materi) => materi.name === this.$route.params.materi
+    // )
+
     this.detailKelas = data[0]
+    // this.detailMateri = detailMateri
     console.log(this.detailKelas)
+    console.log('data :', data)
   },
   methods: {},
 }
