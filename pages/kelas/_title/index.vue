@@ -13,7 +13,7 @@
         <div class="w-11/12 mx-auto py-4">
           {{ detailKelas.title }}
           <NuxtLink
-            to="/"
+            :to="`/kelas/${detailKelas.slug}/${detailKelas.materi1}`"
             class="
               block
               w-full
@@ -111,7 +111,7 @@
           ></iframe>
           <div class="w-11/12 mx-auto py-4">
             <NuxtLink
-              to="/cart"
+              :to="`/kelas/${detailKelas.slug}/${detailKelas.materi1}`"
               class="
                 block
                 w-full
@@ -136,7 +136,8 @@
           {{ detailKelas.desc }}
         </h4>
       </div>
-      <div class="md:w-3/12 bg-blue-100">
+      <div class="md:w-3/12">
+        <img :src="detailKelas.imgProject" :alt="detailKelas.title" /> <br />
         <img :src="detailKelas.imgProject" :alt="detailKelas.title" />
       </div>
     </section>
@@ -167,7 +168,6 @@ export default {
   width: 100%;
   height: 200px;
 }
-
 @media only screen and (min-width: 600px) {
   .youtube-size {
     width: 100%;
@@ -175,7 +175,6 @@ export default {
     border-radius: 10px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .youtube-size {
     width: 100%;
@@ -183,7 +182,6 @@ export default {
     border-radius: 10px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .youtube-size {
     width: 100%;
@@ -192,3 +190,7 @@ export default {
   }
 }
 </style>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security

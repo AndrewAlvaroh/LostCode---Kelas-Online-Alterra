@@ -2,7 +2,7 @@ import products from '~/mock/products.json'
 
 export const state = () => ({
     products: [],
-    cart: []
+    cart: [],
 })
 
 export const getters = {
@@ -26,8 +26,6 @@ export const actions = {
    DeleteItem({commit}, id){
     commit("DeleteItem", id)
    },
-
-   
 }
 
 export const mutations = {
