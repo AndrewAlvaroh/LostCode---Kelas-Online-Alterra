@@ -51,9 +51,20 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
-    manifest: {
-      lang: 'en',
+    meta: {
+      title : 'LostCode',
+      author : 'alvaro'
     },
+    manifest: {
+      name: 'Lostcode',
+      short_name: 'Lostcode',
+      lang: 'en',
+      description: 'Tempat belajar yang menyenangkan'
+    },
+    icon: {
+      fileName : 'logo.png',
+      Default: [64, 120, 144, 152, 192, 384, 512]
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
